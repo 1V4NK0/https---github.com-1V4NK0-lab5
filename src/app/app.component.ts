@@ -28,7 +28,7 @@ export class AppComponent implements OnInit{
     this.weatherService.getWeatherData().subscribe(
     (data) => {
       console.log(data);
-      this.weatherData = data;
+      this.weatherData = data.weather;
       this.temperature = (data.main.temp - 273).toFixed(2);
     }
     )
