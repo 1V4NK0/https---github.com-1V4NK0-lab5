@@ -9,8 +9,7 @@
 </ul> -->
 
 <!-- showing weather data -->
-<!-- <h3>Temperature in Galway - {{weatherData.main.temp}} degrees</h3> -->
+<h3>Temperature in Galway - {{temperature}} degrees</h3>
 @for (w of weatherData; track w) {
   <p>{{w.main}} - {{w.description}}</p>
 }
-<h3>{{temperature}}</h3>
